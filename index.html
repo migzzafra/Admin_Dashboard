@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
+
 <body>
 
     <!-- THIS IS THE HEADER SECTION OF THE PAGE -->
     <header class="header-menu">
         <div class="searchsection">
-            <label for="searchengine">Lens</label>
+            <label for="searchengine"><img src="svg/search.svg" alt="search icon"></label>
             <input type="text" name="searchengine" id="searchengine">
 
             <div class="notifbar">
-                <a href="#">bell</a>
-                <a href="#">profilepic</a>
-                <a href="#">profilename</a>
+                <a href="#"><img src="svg/notif.svg" alt="bell notification icon"></a>
+                <img src="img/catmorgan.png" alt="profile pic of morgan">
+                <h3>Morgan Oakley</h3>
             </div>
         </div>
 
         <div class="greetings">
-            <img src="#" alt="profile pic of the user">
+            <img src="img/catmorgan.png" alt="profile pic of the user">
 
             <div class="greetings">
                 <p>Hi there,</p>
@@ -39,63 +40,129 @@
 
     <!-- THIS IS THE SIDE NAVIGATION SECTION OF THE PAGE -->
     <nav class="side-menu">
-        <div class="home">Dashboard</Div>
+        <div class="home">
+            <h3>Dashboard</h3>
+        </div>
 
-        <div class="space"></div>
+        <br>
+        
+        <div class="navbar">
+            <a href="#" class="menunavbar home-nav">
+                <img src="svg/home.svg" alt="home">
+                <h4>Home</h4>
+            </a>
 
-        <ul class="navmenu">
-            <li><a href="#" >Home</a></li>
-            <li><a href="#" >Profile</a></li>
-            <li><a href="#" >Messages</a></li>
-            <li><a href="#" >History</a></li>
-            <li><a href="#" >Tasks</a></li>
-            <li><a href="#" >Communities</a></li>
-        </ul>
+            <a href="#" class="menunavbar prof-nav">
+                <img src="svg/profile.svg" alt="profile">
+                <h4>Profile</h4>
+            </a>
 
-        <div class="space"></div>
+            <a href="#" class="menunavbar mail-nav">
+                <img src="svg/messages.svg" alt="messages">
+                <h4>Messages</h4>
+            </a>
 
-        <ul class="settingmenu">
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Privacy</a></li>
-        </ul>
+            <a href="#" class="menunavbar hist-nav">
+                <img src="svg/history.svg" alt="history">
+                <h4>History</h4>
+            </a>
+
+            <a href="#" class="menunavbar task-nav">
+                <img src="svg/tasks.svg" alt="tasks">
+                <h4>Tasks</h4>
+            </a>
+
+            <a href="#" class="menunavbar groups-nav">
+                <img src="svg/communities.svg" alt="communities">
+                <h4>Communities</h4>
+            </a>
+        </div>
+        
+        <br>
+
+        <div class="supportsection">
+             <a href="#" class="menunavbar settings-nav">
+                <img src="svg/settings.svg" alt="settings">
+                <h4>Settings</h4>
+            </a>
+
+            <a href="#" class="menunavbar support-nav">
+                <img src="svg/support.svg" alt="support">
+                <h4>Support</h4>
+            </a>
+
+            <a href="#" class="menunavbar priv-nav">
+                <img src="svg/privacy.svg" alt="privacy">
+                <h4>Privacy</h4>
+            </a>
+        </div>
     </nav>
 
     <!-- THIS IS THE SECTION OF THE PAGE FOR CARDS -->
     <main class="thumbnailcontents">
 
-        <div id="yourprojects">
+        <div id="yourprojects" class="projectcards">
             <h4>Your Projects</h4>
         </div>
 
-        <div id="supercool">
+        <div id="supercool" class="projectcards">
             <h5>Super Cool Projects</h5>
             <p>Sed tempus ut lacus ut scelerisque. Suspendisse solicitudin nibh erat, id facilisis felis accumsan nec.</p>
+            <div class="cardcommands">
+                <a href="#"><img src="svg/star.svg" alt="star"></a>
+                <a href="#"><img src="svg/eye.svg" alt="eye"></a>
+                <a href="#"><img src="svg/connect.svg" alt="connect"></a>
+            </div>
         </div>
 
-        <div id="impossibleapp">
+        <div id="impossibleapp" class="projectcards">
             <h5>Impossible App</h5>
             <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+            <div class="cardcommands">
+                <a href="#"><img src="svg/star.svg" alt="star"></a>
+                <a href="#"><img src="svg/eye.svg" alt="eye"></a>
+                <a href="#"><img src="svg/connect.svg" alt="connect"></a>
+            </div>
         </div>
 
-        <div id="adblocker">
+        <div id="adblocker" class="projectcards">
             <h5>Ad Blocker</h5>
             <p>Quisque eget rutrum nisl. Nam augue justo, cursus vite metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+            <div class="cardcommands">
+                <a href="#"><img src="svg/star.svg" alt="star"></a>
+                <a href="#"><img src="svg/eye.svg" alt="eye"></a>
+                <a href="#"><img src="svg/connect.svg" alt="connect"></a>
+            </div>
         </div>
 
-        <div id="lesscool">
+        <div id="lesscool" class="projectcards">
             <h5>Less Cool Project</h5>
             <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+            <div class="cardcommands">
+                <a href="#"><img src="svg/star.svg" alt="star"></a>
+                <a href="#"><img src="svg/eye.svg" alt="eye"></a>
+                <a href="#"><img src="svg/connect.svg" alt="connect"></a>
+            </div>
         </div>
         
-        <div id="easypeasyapp">
+        <div id="easypeasyapp" class="projectcards">
             <h5>Easy Peasy App</h5>
             <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim uma eget accumsan Aliquam. Curabitur dignissim nisi in tortor commod, ac bibendum magna tincidunt.</p>
+            <div class="cardcommands">
+                <a href="#"><img src="svg/star.svg" alt="star"></a>
+                <a href="#"><img src="svg/eye.svg" alt="eye"></a>
+                <a href="#"><img src="svg/connect.svg" alt="connect"></a>
+            </div>
         </div>
         
-        <div id="moneymaker">
+        <div id="moneymaker" class="projectcards">
             <h5>Money Maker</h5>
             <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pelientesque mollis nec sem vel aliquam.</p>
+            <div class="cardcommands">
+                <a href="#"><img src="svg/star.svg" alt="star"></a>
+                <a href="#"><img src="svg/eye.svg" alt="eye"></a>
+                <a href="#"><img src="svg/connect.svg" alt="connect"></a>
+            </div>
         </div>
     </main>
 
@@ -107,8 +174,10 @@
         <div class="announcementtabs">
             <h5>Site Maintenance</h5>
             <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+            <hr>
             <h5>Community Share Day</h5>
             <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumnsan porttitor...</p>
+            <hr>
             <h5>Updated Privacy Policy</h5>
             <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
         </div>
@@ -118,37 +187,38 @@
         </div>
 
         <div class="trendstab">
-            <div class="firsttrend">
-                <img src="" alt="tegan">
+            
+            <button>
+                <a href="http://icons8.com"><img src="img/dogtegan.png" alt="tegan"></a>
                 <div>
                     <p>@tegan</p>
                     <p>World Peace Builder</p>
                 </div>
-            </div>
-
-            <div class="sectrend">
-                <img src="" alt="morgan">
+            </button>
+            
+            <button>
+                <a href="http://icons8.com"><img src="img/catmorgan.png" alt="morgan"></a>
                 <div>
                     <p>@morgan</p>
                     <p>Super Cool Project</p>
                 </div>
-            </div>
+            </button>
 
-            <div class="thirdtrend">
-                <img src="" alt="kendall">
+            <button>
+                <a href="http://icons8.com"><img src="img/pigkendall.png" alt="kendall"></a>
                 <div>
                     <p>@kendall</p>
                     <p>Life Changing App</p>
                 </div>
-            </div>
+            </button>
 
-            <div class="fourthtrend">
-                <img src="" alt="alex">
+            <button>
+                <a href="http://icons8.com"><img src="img/penguinalex.png" alt="alex"></a>
                 <div>
                     <p>@alex</p>
                     <p>No Traffic Maker</p>
                 </div>
-            </div>
+            </button>
 
         </div>
     </article>
