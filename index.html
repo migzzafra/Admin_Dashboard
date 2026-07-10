@@ -10,37 +10,43 @@
 <body>
 
     <!-- THIS IS THE HEADER SECTION OF THE PAGE -->
-    <header class="header-menu">
-        <div class="searchsection">
-            <label for="searchengine"><img src="svg/search.svg" alt="search icon"></label>
-            <input type="text" name="searchengine" id="searchengine">
+    <header class="header-menu" id="mainheader">
+        <div class="top-header">
 
-            <div class="notifbar">
+            <div class="searchsection">
+                <label for="searchengine"><img src="svg/search.svg" alt="search icon"></label>
+                <input type="text" name="searchengine" id="searchengine">
+            </div>
+
+            <div class="notifsection">
                 <a href="#"><img src="svg/notif.svg" alt="bell notification icon"></a>
-                <img src="img/catmorgan.png" alt="profile pic of morgan">
+                <img src="img/catmorgan.png" alt="profile pic of morgan" style="width: 50px;height: 50px;">
                 <h3>Morgan Oakley</h3>
             </div>
+
         </div>
 
-        <div class="greetings">
-            <img src="img/catmorgan.png" alt="profile pic of the user">
-
-            <div class="greetings">
-                <p>Hi there,</p>
-                <p>Morgan Oakley(@morgan)</p>
+        <div class="bottom-header">
+            <div class="welcomesection">
+                <img src="img/catmorgan.png" alt="profile pic of the user" style="width:75px;height: 75px;">
+                <div class="greetings">
+                    <p>Hi there,</p>
+                    <p>Morgan Oakley (@morgan)</p>
+                </div>
             </div>
-
+            
             <ul>
                 <li><button>New</button></li>
                 <li><button>Upload</button></li>
                 <li><button>Share</button></li>
             </ul>
         </div>
+
     </header>
 
     <!-- THIS IS THE SIDE NAVIGATION SECTION OF THE PAGE -->
-    <nav class="side-menu">
-        <div class="home">
+    <nav class="side-menu" id="mainmenu">
+        <div class="home menunavbar">
             <h3>Dashboard</h3>
         </div>
 
@@ -99,7 +105,7 @@
     </nav>
 
     <!-- THIS IS THE SECTION OF THE PAGE FOR CARDS -->
-    <main class="thumbnailcontents">
+    <main class="thumbnailcontents" id="maincontents">
 
         <div id="yourprojects" class="projectcards">
             <h4>Your Projects</h4>
@@ -167,7 +173,7 @@
     </main>
 
     <!-- THIS IS THE ANNOUNCEMENTS AND TRENDING SECTION -->
-    <article class="newstab">
+    <article class="newstab" id="mainnews-trends">
         
         <h4 class="announcements">Announcements</h4>
         
