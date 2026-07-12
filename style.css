@@ -189,6 +189,7 @@ body {
         border-radius: 10px;
         display: flex;
         flex-direction: column;
+        border-left: 8px solid rgb(224, 188, 25);
 
         h5, p{
             margin-block-start: 0px;
